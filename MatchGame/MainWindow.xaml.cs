@@ -67,6 +67,7 @@ namespace MatchGame
                     int index = random.Next(animalEmoji.Count);
                     string nextEmoji = animalEmoji[index];
                     textBlock.Text = nextEmoji;
+                    textBlock.Visibility = Visibility.Visible;
                     animalEmoji.RemoveAt(index);
                 }
             }
